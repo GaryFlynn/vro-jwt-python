@@ -18,5 +18,4 @@ def handler(context, inputs):
                 "exp": exp }
     jwt.encode(payload, private_key, algorithm='RS256', headers=headers)
     encoded = jwt.encode(payload, private_key, algorithm='RS256', headers=headers)
-    print("Encoded: ", encoded)
     return encoded
