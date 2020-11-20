@@ -13,7 +13,7 @@ def handler(context, inputs):
     payload =   { "iss": "svc-vra8-db@dev1-iaas-playground-9e0c.iam.gserviceaccount.com",
                 "sub": "svc-vra8-db@dev1-iaas-playground-9e0c.iam.gserviceaccount.com",
                 "aud": "https://www.googleapis.com/oauth2/v4/token",
-                "scope": "https://www.googleapis.com/auth/devstorage.read_only",
+                "scope": "https://www.googleapis.com/auth/compute",
                 "iat": iat,
                 "exp": exp }
     jwt.encode(payload, private_key, algorithm='RS256', headers=headers)
